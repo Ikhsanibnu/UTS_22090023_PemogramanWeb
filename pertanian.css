@@ -1,0 +1,125 @@
+/* Tambahkan gaya CSS sesuai kebutuhan Anda di sini */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cffccf;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #55cd4c;
+    color: white;
+    padding: 30px 0;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstname {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.lastname {
+    font-size: 30px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #55cd4c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #131313;
+}
+
+th{
+    background-color: rgb(122, 244, 160);
+}
+ td{
+    background-color: rgb(221, 228, 250);
+ }
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #55cd4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

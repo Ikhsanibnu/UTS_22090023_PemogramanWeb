@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio Saya</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Ambil semua elemen dengan class "work-sample"
+            var workSamples = document.querySelectorAll('.work-sample');
+
+            // Tambahkan event listener untuk setiap elemen
+            workSamples.forEach(function (sample) {
+                sample.addEventListener('click', function () {
+                    // Ambil gambar anak pertama dari elemen yang diklik
+                    var imageSrc = sample.querySelector('img').src;
+
+                    // Tampilkan gambar dalam modus pop-up atau lightbox
+                    var lightbox = document.createElement('div');
+                    lightbox.classList.add('lightbox');
+                    lightbox.innerHTML = '<img src="' + imageSrc + '" alt="Contoh Karya" class="lightbox-img">';
+
+                    // Tambahkan event listener untuk menutup lightbox saat diklik
+                    lightbox.addEventListener('click', function () {
+                        document.body.removeChild(lightbox);
+                    });
+
+                    // Tambahkan lightbox ke body
+                    document.body.appendChild(lightbox);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>IKHSAN IBNU AJI</h1>
+        <img src="img/fotoku.png" alt="Foto Saya">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#Contoh Karya">Contoh Karya</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <section id="data-diri">
+        <h2>Data Diri</h2>
+        
+        <ul>
+            <li>Alamat: Desa Rengasbandung, Kec. Jatibarang, Kabupaten Brebes,Jawa Tenggah</li>
+            <li>Email: ikhsanibnu2016@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/ikhsanibnu/" target="_blank">https://www.linkedin.com/in/ikhsanibnu/</a></li>
+            <!-- Tambahkan media sosial lainnya sesuai kebutuhan -->
+        </ul>
+    </section>
+    
+    <section id="tentang-diri">
+
+        <h2>Tentang Diri Saya</h2>
+
+        <p>Saya adalah mahasiswa aktif yang berkuliah di Politeknik Harapan Bersama. Saya memiliki keahlian dalam bahasa pemrograman seperti Python, JavaScript, HTML dan Java. Pengalaman saya adalah menjadi panitia PKKMB kemarin. Saya juga merupakan anggota HMPTI bagian Eksternal dan saya juga masuk kedalam jajaran Badan Pengurus Wilayah PERMIKOMNAS (Perhimpunan Mahasiswa Informatika dan Komputer Nasional) Wilayah Jawa Tengah. Saya sebagai Badan Pengurus Wilayah juga sering dapat undangan untuk mengisi acara Makrab Informatika di Kampus lain khususnya daerah Brebes, Bumiayu, Tegal.</p>
+        <p>Hobi : Sepakbola,</p>
+        <p>Saya LULUSAN SMK Negeri 1 Brebes Jurusan Akuntansi, agak lain emang</p>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume Pengalaman</h2>
+        <ul>
+            <li>
+                <h3>Pembuatan Desain UI/UX Aplication</h3>
+                <p>2021 - Sekarang</p>
+                <p>Desain UI/UX ialah memperindah sebuah aplikasi atau web, biasanya saya mendesain sebuah fitur yang ada di aplikasi dengan menggunakan FIGMA.</p>
+            </li>
+            <li>
+                <h3>Pembuatan Desain UI/UX Website</h3>
+                <p>2021 - Sekarang </p>
+                <p>Desain UI/UX ialah memperindah sebuah aplikasi atau web, biasanya saya mendesain sebuah fitur yang ada di Website dengan menggunakan FIGMA.</p>
+            </li>
+            <li>
+                <h2> Resumen Invofest</h2>
+                <p> Tanggal: 26/10/2023</p>
+                <p>A. Materi Tentang Tips Meniti Karir Dibidang Teknologi</p>
+                <p>Komerce adalah perusahaan teknologi yang berfokus untuk mempermudah opersional bisnis online UMKM dari hulu ke hilir. ada 8 produk dari komerce</p>
+                <p>1.Komtim (Platform penyedian tim opersional e-commerce siap pakai)</p>
+                <p>2.Komship(Platform manajemen pengiriman)</p>
+                <p>3.Kompack(Platform manajemen perundangan)</p>
+                <p>4.Komclass(Platform peningkatan kapasitas bisnis online)</p>
+                <p>5.Komplace(Platform manajemen marketplace)</p>
+                <p>6.Pendamping UMKM (Pendamping bisnis online di kotamu)</p>
+                <p>7.Komcards (Kartu debit virtual-nya pebisnis online)</p>
+                <p>8.Komfrom  (Form builder khusus buat pebisnis online)</p>
+                <p>B. Materi Tentang PT IVATAMA TEKNOLOGI COMPANY PROFIL 2022 Materi yang menjelaskan tentang penawaran Layanan Profesional, dimana di dalam nya mempunyai 4 macam, yaitu;</p>
+                <p>1. Pengembangan Aplikasi</p>
+                <p>•Konsol dan Aplikasi Berbasis Web</p>
+                <p>•Aplikasi Seluler</p>
+                <p>•Aplikasi dalam Kontainer</p>
+                <p>2.Proyek ImplementasiInsinyur DevOps</p>
+                <p>•Manajemen proyek</p>
+                <p>•Analis Bisnis</p>
+                <p>•Konfigurasi </p>
+                <p>•Kustomisai</p>
+                <p>•Pengujian </p>
+                <p>•Dokumentasi</p>
+                <p>•Tranfer Pengetahuan</p>
+                <p>3.Infrastruktur & Middleware</p>
+                <p>•Telanjang Logam</p>
+                <p>•Platform Virtualisasi</p>
+                <p>•Platform Kontainer</p>
+                <p>•Server Aplikasi</p>
+                <p>•Manajemen API</p>
+                <p>•Konfigurasi & Otomatisas</p>
+                <p>4.Dukungan Pemeliharaan </p>
+                <p>•Pemeliharaan Korektif</p>
+                <p>•Pemeliharaan Preventif</p>
+                    
+            </li>
+        </ul>
+    </section>
+    
+    <section id="work-samples">
+        <h2>Contoh Karya</h2>
+        <div class="work-sample">
+            <img src="img/TampilanFigma.png" alt="Contoh Karya 1">
+            <p>Ini merupakan tampilan Desain aplikasi konsultasi kesehatan berbasis android. Sebenernya buat lomba cuma kurang dana.</p>
+        </div>
+        <div class="work-sample">
+            <img src="img/Beranda.png" alt="Tampilan Beranda">
+            <p>Ini Merupakan Tampilan Berandanya</p>
+        </div>
+        <!-- Tambahkan contoh karya lain sesuai kebutuhan -->
+    </section>
+
+    <section id="Kontak ">
+        <h2>Kontak</h2>
+        <p>Email     : ikhsanibnu2016@gmail.com</p>
+        <p>Instragram: @ikhsanibnuu</p>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ikhsan Ibnu Aji</p>
+    </footer>
+</body>
+</html>
+

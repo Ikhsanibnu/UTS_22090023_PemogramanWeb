@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pertanian.css"/>
+    <title>Halaman Pertanian</title>
+</head>
+
+<head>
+    <!-- ... (Bagian lain dari head) ... -->
+    <script>
+        function kirimForm() {
+            // Ambil nilai dari input nama, email, dan pesan
+            var nama = document.getElementById("Hasilpertanian").value;
+            var email = document.getElementById("email").value;
+            var pesan = document.getElementById("pesan").value;
+
+            // Validasi sederhana
+            if (nama === "" || email === "" || pesan === "") {
+                alert("Harap isi semua kolom!");
+                return false; // Mencegah pengiriman form jika ada kolom yang kosong
+            }
+
+            // Simulasi pengiriman data ke server (Anda bisa menggantinya dengan pengiriman sesungguhnya)
+            // Di sini kita hanya menampilkan pesan di dalam alert box
+            alert("Form berhasil dikirim:\nNama: " + nama + "\nEmail: " + email + "\nPesan: " + pesan);
+
+            // Reset nilai input setelah pengiriman berhasil
+            document.getElementById("Hasilpertanian").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("pesan").value = "";
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">Selamat Datang</div>
+                <div class="lastname">Di Dunia Pertanian Milenial</div>
+            </div>
+            <div>
+                <ul class="navigation">
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="/" class="active">Hasil Pertanian</a></li>
+                    <li><a href="/">Kontak Admin</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <img src="img/sawah2.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+    <nav>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Tentang Pertanian</h2>
+            <p>Petani telah menjadi salah satu pilar utama perekonomian dunia selama ribuan tahun. Petani juga merupakan fondasi dari kehidupan manusia. Petani juga berperan dalam menyediakan bahan baku untuk industri makanan, tekstil, dan banyak sektor ekonomi lainnya.</p>
+            <p>Ini juga berdampak pada lingkungan kita, Pertanian berkelanjutan tidak hanya membantu menjaga produktivitas tanah tetapi juga mengurangi dampak negatif pada lingkungan.</p>
+        </section>
+
+        <section>
+            <h2>Pertanian Modern</h2>
+            <img src="img/Sawah1.jpg" alt="Girl in a jacket" style="width:90%;height:400px;">
+            <p>Dalam beberapa dekade terakhir, kolaborasi antara teknologi dan pertanian telah mengubah industri ini secara radikal. Teknologi telah membawa produktivitas dan inovasi ke dalam dunia pertanian modern, dan menghadirkan solusi untuk menghadapi populasi dunia yang terus bertumbuh. Pertanian modern tidak lagi hanya mengandalkan keberuntungan dan pengalaman, misalnya dengan adanya Sensor canggih dan Teknologi (IoT) memungkinkan petani untuk memantau secara real-time kondisi tanah, tanaman, hewan, mengukur kelembaban tanah, pH tanah/nutrisi dan informasi tentang suhu. Data ini membantu petani membuat keputusan tentang kapan harus menanam dan menyiram/memberi makan.</p>
+            <p>Dengan kecanggihan, robot dan peralatan otomatis kini telah menggantikan pekerjaan yang manual di pertanian modern. Dengan SIG mereka dapat memilih lokasi tanam yang optimal, mengelola irigasi, dan mengidentifikasi area dengan risiko erosi.</p>
+        </section>
+        <section>
+            <h2>Data Hasil Pertanian</h2>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Tanaman</th>
+                    <th>Hasil (kg)</th>
+                    <th>Harga Pemasaran (IDR/kg)</th>
+                    <th>Waktu Penanaman</th>
+                    <th>Biaya Produktivitas (IDR)</th>
+                    <th>Pendapatan (IDR)</th>
+                    <th>Keuntungan (IDR)</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Padi</td>
+                    <td>500</td>
+                    <td>2000</td>
+                    <td>Musim Hujan</td>
+                    <td>20.000.000</td>
+                    <td>40.000.000</td>
+                    <td>20.000.000</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Jagung</td>
+                    <td>300</td>
+                    <td>2500</td>
+                    <td>Musim Kemarau</td>
+                    <td>10.000.000</td>
+                    <td>15.000.000</td>
+                    <td>5.000.000</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Wortel</td>
+                    <td>150</td>
+                    <td>3000</td>
+                    <td>Musim Semi</td>
+                    <td>450000</td>
+                    <td>450000</td>
+                    <td>52.000.000</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Kedelai</td>
+                     <td>3.000</td>
+                     <td>10.000</td>
+                     <td>Musim Kemarau dan Musim Hujan</td>
+                     <td>10.000.000</td>
+                     <td>17.500.000</td>
+                     <td>7.500.000</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Karet</td>
+                    <td>500-800</td>
+                    <td>1.000(Tergantung Faktor Eksternal)</td>
+                    <td>Musim Hujan</td>
+                    <td>9.995.000</td>
+                    <td>5.000</td>
+                    <td>9.990.000</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Gandum</td>
+                    <td>2.000-4.000</td>
+                    <td>3.000</td>
+                    <td>musim semi dan musim gugur</td>
+                    <td>10.000.000</td>
+                    <td>9.000.000</td>
+                    <td>1.000.000</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Kentang</td>
+                    <td>10-30 ton</td>
+                    <td>5.000</td>
+                    <td>musim semi dan musim gugur</td>
+                    <td>10.000.000</td>
+                    <td>100.000.000</td>
+                    <td>90.000.000</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Tomat</td>
+                    <td>10.000</td>
+                    <td>10.000</td>
+                    <td>musim semi dan musim gugur</td>
+                    <td>5.000.000</td>
+                    <td>100.000.000</td>
+                    <td>95.000.000</td>
+                </tr>
+            </table>
+        </section>
+        
+
+        <section>
+            <h2>Pemesanan Produk</h2>
+            <form onsubmit="return kirimForm();">
+                <label for="Hasilpertanian">Nama:</label>
+                <input type="text" id="Hasilpertanian" name="Hasilpertanian" value=""><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value=""><br><br>
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" aria-valuemax="Pesan"></textarea><br><br>
+                <input type="submit" value="Kirim">
+            </form>
+        </section>
+
+        <section>
+            <h2>Referensi</h2>
+            <p>Silakan kunjungi situs <a href="https://ppid.pertanian.go.id/">ppid.pertanian.go.id</a> untuk informasi lebih lanjut tentang pertanian.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dunia Pertanian Milenial</p>
+    </footer>
+</body>
+</html>
